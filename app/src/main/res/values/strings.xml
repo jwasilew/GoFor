@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">GoFor</string>
+
+
+
+    <string name="empty_item_list">No Material Information Available</string>
 </resources>
