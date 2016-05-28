@@ -18,7 +18,7 @@
         android:name="net.egofor.gofor.GridFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="2"
+        android:layout_weight="1"
         tools:layout="@android:layout/list_content" />
 
 
@@ -28,6 +28,6 @@
         android:id="@+id/item_detail_container"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="4" />
+        android:layout_weight="1" />
 
 </LinearLayout>
