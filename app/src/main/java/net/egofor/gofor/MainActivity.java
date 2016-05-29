@@ -5,6 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.backendless.Backendless;
+import com.nostra13.universalimageloader.cache.disc.DiskCache;
+import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiskCache;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.download.BaseImageDownloader;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,8 +24,24 @@ public class MainActivity extends AppCompatActivity {
     public Toolbar toolbar;
 
     @Override
+    protected void onDestroy() {
+        ImageLoader.getInstance().destroy();
+        super.onDestroy();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+//        DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
+//                .cacheInMemory(true)
+//                .cacheOnDisk(true).build();
+//
+//        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(getApplicationContext())
+//                .defaultDisplayImageOptions(defaultOptions)
+//                .build();
+//        ImageLoader.getInstance().init(config);
+
 
         //  Here is where the initial view is set
         setContentView(R.layout.activity_main);

@@ -15,7 +15,7 @@
     android handles automatically determines if a larger screen is present-->
     <fragment
         android:id="@+id/fragment_grid"
-        android:name="net.egofor.gofor.GridFragment"
+        android:name="net.egofor.gofor.GridViewActivity"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
