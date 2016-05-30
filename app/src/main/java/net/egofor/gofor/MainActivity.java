@@ -71,11 +71,7 @@ public class MainActivity extends AppCompatActivity implements MaterialFragment.
 
 
     public void DecideLayout() {
-
-
         getSupportFragmentManager().beginTransaction().replace(R.id.main_container, new MaterialFragment()).commitAllowingStateLoss();
-
-
     }
 
 
@@ -99,14 +95,13 @@ public class MainActivity extends AppCompatActivity implements MaterialFragment.
 
         if (mTwoPane) {
 
-            //  If we're in two pane mode start the new instance of MovieDetailFragment with the
-            // passed in Intent
+            //  If we're in two pane mode add new instance of MovieDetailFragment to right side
             getSupportFragmentManager().beginTransaction().replace(R.id.detail_container,
                     MaterialDetailFragment.newInstance(intent), DETAILFRAGMENT_TAG).commit();
 
 
         } else {
-
+            //  If we're in single pane mode start the new screen with passed in Intent
             startActivity(intent);
         }
     }
