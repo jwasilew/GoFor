@@ -20,14 +20,15 @@
         android:layout_height="wrap_content"
         android:text="Manufacturer"
         android:paddingLeft="8dp"
-        android:id="@+id/description_text_view"/>
+        android:id="@+id/mfg"/>
 
     <TextView
         android:layout_width="185dp"
         android:layout_height="wrap_content"
         android:text="Part#"
         android:paddingLeft="8dp"
-        android:paddingTop="8dp" />
+        android:paddingTop="8dp"
+        android:id="@+id/mfg_part"/>
 
 
 

@@ -1,31 +1,39 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MaterialFragment"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".GridViewActivity">
+    android:fitsSystemWindows="true">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--android:background="#000000"-->
+    <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
 
 
     <GridView
-        android:id="@+id/gridview_forecast"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center"
+        android:id="@+id/gridview_material"
         android:columnWidth="150dp"
-        android:fitsSystemWindows="true"
-        android:horizontalSpacing="0dp"
         android:numColumns="auto_fit"
         android:verticalSpacing="0dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"></GridView>
-
-    <ProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/progressBar"
-        android:layout_centerInParent="true"
-        android:visibility="gone"/>
+        android:horizontalSpacing="0dp"
+        android:stretchMode="columnWidth"
+        android:layout_gravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fitsSystemWindows="true"></GridView>
 
 </FrameLayout>
 

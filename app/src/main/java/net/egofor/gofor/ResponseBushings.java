@@ -215,10 +215,11 @@ public class ResponseBushings {
 //            String IMAGE_BASE_URL = "ftp://server20.000webhost.com/Images/";
             String IMAGE_FILE_EXT = ".jpg";
 
-            _thumbnail = IMAGE_BASE_URL + _thumbnail + IMAGE_FILE_EXT;
+            String thumbnailUrl = IMAGE_BASE_URL + _thumbnail + IMAGE_FILE_EXT;
 
-            Log.d("Image URLs", _thumbnail + "\n");
-            return _thumbnail;
+
+            Log.d("Image URLs", thumbnailUrl + "\n");
+            return thumbnailUrl;
         }
 
         public void set_thumbnail(String _thumbnail) {

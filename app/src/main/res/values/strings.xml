@@ -4,4 +4,6 @@
 
 
     <string name="empty_item_list">No Material Information Available</string>
+
+    <string name="title_activity_detail">Detail</string>
 </resources>
